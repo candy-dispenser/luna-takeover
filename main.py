@@ -39,6 +39,7 @@ def callback():
     tokens = oauth.fetch_access_token(ACCESS_TOKEN_URL)
     session['access_token'] = tokens['oauth_token']
     session['access_token_secret'] = tokens['oauth_token_secret']
+    print("Callback hit")
     return redirect(url_for('update_profile'))
 
 @app.route("/update_profile")
