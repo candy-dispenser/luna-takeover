@@ -10,7 +10,7 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY", "fallback_dev_secret")
 # Twitter API credentials
 CONSUMER_KEY = os.getenv("CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("CONSUMER_SECRET")
-CALLBACK_URL = os.getenv("CALLBACK_URL", "https://lunatakeover-url.onrender.com/callback")
+CALLBACK_URL = "https://lunatakeover-url.onrender.com/callback"
 
 # OAuth endpoints
 REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
